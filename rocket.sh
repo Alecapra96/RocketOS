@@ -33,9 +33,9 @@ case $retval in
                 #Instalo dependencias bases
                 sudo apt -y install --no-install-suggests --no-install-recommends wireles-tools xserver-xorg-core software-properties-common broadcom-sta-dkms cmake libfreetype6-dev libfontconfig1-dev xclip build-essential libx11-dev libxft-dev build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev libuv1-dev x11-xserver-utils
                 #iNCRLUIR REPOSITORIOS NON FREE A DEBIAN
-                
+                #https://geekland.eu/activar-los-repositorios-privativos-debian/
                 #INSTALAR BROADCOM 
-                https://debian.pkgs.org/11/debian-nonfree-arm64/broadcom-sta-dkms_6.30.223.271-17_all.deb.html
+                #https://debian.pkgs.org/11/debian-nonfree-arm64/broadcom-sta-dkms_6.30.223.271-17_all.deb.html
                 #Instalo BSPWM
                 git clone https://github.com/baskerville/bspwm.git
                 git clone https://github.com/baskerville/sxhkd.git
@@ -60,7 +60,7 @@ case $retval in
                 sudo apt -y install xinit
             
                 #Creo el archivo .xinitrc
-                sudo cp ~/RocketOS/.xinitrc ~/
+                cp ~/RocketOS/.xinitrc ~/
                 
           
             ;;
